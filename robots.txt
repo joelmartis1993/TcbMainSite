@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /cake-shop-in-bajpe.html
+Allow: /birthday-cakes-in-bajpe.html
+Allow: /custom-cakes-bajpe.html
+Allow: /about-us.html
+Allow: /contact-us.html
+Allow: /blog-home.html
+Allow: /blog/
+Allow: /assets/
+
+Disallow: /admin/
+Disallow: /*.pdf$
+Disallow: /*.zip$
+
+Sitemap: https://thecrimsonbites.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Rate limiting
+User-agent: *
+Crawl-delay: 1
+Request-rate: 30/60
